@@ -39,6 +39,6 @@
 ---
 
 <p align="center">
-  <em>Developed by Easy Safety Solutions Â© 2026. All rights reserved.</em><br />
-  <em>Sovereign Territory: Dubai, United Arab Emirates</em>
+  <em>Developed by Easy Safety Solutions © 2026. All rights reserved.</em><br />
+  <em>KOZHIKODE: KERALA, INDIA</em>
 </p>
