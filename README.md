@@ -11,13 +11,13 @@
 
 <p align="center">
   <a href="https://ess-safety-smart.base44.app/" target="_blank" style="font-weight: bold; color: #10B981; text-decoration: none;">
-    ðŸŒ View Production App: https://ess-safety-smart.base44.app/
+    View Production App: https://ess-safety-smart.base44.app/
   </a>
 </p>
 
 ---
 
-## ðŸš€ Key Features & Capabilities
+## Key Features & Capabilities
 
 - **UAE Ministerial Compliance Alignment:** Fully integrated with local HSE guidelines, including MOHRE regulatory checklists, geofenced GPS site records, and contractor registers.
 - **Offline-First Resilience:** Engineered for low-connectivity construction zones. Log Toolbox Talks, capture master worker signatures, and store them locallyâ€”syncing to the cloud automatically once a connection is detected.
