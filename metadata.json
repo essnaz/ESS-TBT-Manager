@@ -1,0 +1,6 @@
+{
+  "name": "ESS TBT Manager",
+  "description": "Digitized Toolbox Talks HSE system with smart AI suggestions, QR attendance, offline sync, and PDF exports for contractors and companies in the UAE.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

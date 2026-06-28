@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default safety catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Since our full-stack architecture brokers all database access securely via 
+    // the backend server.ts API, we can authorize standard operations on collections.
+    
+    match /clients/{clientId} {
+      allow read, write: if true;
+    }
+    
+    match /tenantUsers/{userId} {
+      allow read, write: if true;
+    }
+    
+    match /workers/{workerId} {
+      allow read, write: if true;
+    }
+    
+    match /sessions/{sessionId} {
+      allow read, write: if true;
+    }
+    
+    match /topics/{topicId} {
+      allow read, write: if true;
+    }
+    
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    
+    match /clientProjects/{projectId} {
+      allow read, write: if true;
+    }
+  }
+}

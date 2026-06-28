@@ -1,0 +1,287 @@
+{
+  "entities": {
+    "ClientAccount": {
+      "title": "ClientAccount",
+      "description": "Enterprise client entity representing corporate safety accounts and subscription packages",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Client ID starting with CL-"
+        },
+        "companyName": {
+          "type": "string",
+          "description": "Fully registered name of the corporate organization"
+        },
+        "adminLoginId": {
+          "type": "string",
+          "description": "The email or identifier used for administrator login"
+        },
+        "adminPassword": {
+          "type": "string",
+          "description": "Hashed or plain administrator security password"
+        },
+        "passcode": {
+          "type": "string",
+          "description": "Personal 4-6 digit offline passcode pin"
+        },
+        "subscriptionStatus": {
+          "type": "string",
+          "enum": ["Paid", "Unpaid", "Expired", "Trial"]
+        },
+        "subscriptionExpiryDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "sitesActive": {
+          "type": "number"
+        },
+        "usersActive": {
+          "type": "number"
+        },
+        "sessionsCount": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "maxRolesAllowed": {
+          "type": "number"
+        }
+      },
+      "required": ["id", "companyName", "adminLoginId", "subscriptionStatus", "subscriptionExpiryDate"]
+    },
+    "TenantUser": {
+      "title": "TenantUser",
+      "description": "Safety officers, site engineers or viewers created under an enterprise ClientAccount",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique user ID starting with TU-"
+        },
+        "clientId": {
+          "type": "string",
+          "description": "ID of the associated ClientAccount"
+        },
+        "loginId": {
+          "type": "string",
+          "description": "Corporate electronic mail login"
+        },
+        "password": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "passcode": {
+          "type": "string"
+        },
+        "companyId": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "safetyRating": {
+          "type": "number"
+        },
+        "photoUrl": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "clientId", "loginId", "name", "role", "createdAt"]
+    },
+    "Worker": {
+      "title": "Worker",
+      "description": "Individual field worker rostered on sites for attendance and safety induction tracking",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "HSE ID Card number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "name", "designation"]
+    },
+    "TbtSession": {
+      "title": "TbtSession",
+      "description": "Completed daily Toolbox Talk (TBT) logs containing attendance sheets and visual signature elements",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Session Report Ref e.g. NSS-TBT-1002"
+        },
+        "date": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        },
+        "clientName": {
+          "type": "string"
+        },
+        "projectName": {
+          "type": "string"
+        },
+        "projectNumber": {
+          "type": "string"
+        },
+        "siteLocation": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "hazards": {
+          "type": "array"
+        },
+        "controls": {
+          "type": "array"
+        },
+        "ppeRequired": {
+          "type": "array"
+        },
+        "remarks": {
+          "type": "string"
+        },
+        "photoEvidence": {
+          "type": "string"
+        },
+        "supervisorSignature": {
+          "type": "string"
+        },
+        "hseOfficerSignature": {
+          "type": "string"
+        },
+        "synced": {
+          "type": "boolean"
+        },
+        "totalManpower": {
+          "type": "number"
+        },
+        "totalManHours": {
+          "type": "number"
+        }
+      },
+      "required": ["id", "date", "time", "clientName", "projectName", "projectNumber", "siteLocation", "topic"]
+    },
+    "TbtTopic": {
+      "title": "TbtTopic",
+      "description": "Compliance Toolbox Talk training modules and topics categorized by hazards",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "title", "category"]
+    },
+    "StaffUser": {
+      "title": "StaffUser",
+      "description": "Dynamic supervisor login logs or staff profiles registered by administration",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "avatarUrl": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "name", "role"]
+    },
+    "ClientProject": {
+      "title": "ClientProject",
+      "description": "Information on created projects, project numbers, locations, and contract validity periods.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "clientNameAddress": {
+          "type": "string"
+        },
+        "projectName": {
+          "type": "string"
+        },
+        "projectNo": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "validityDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "originalValidityDate": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": ["id", "clientNameAddress", "projectName", "projectNo", "location", "validityDate"]
+    }
+  },
+  "firestore": {
+    "/clients/{clientId}": {
+      "schema": "ClientAccount",
+      "description": "Collection storing corporate subscriber tenant credentials"
+    },
+    "/tenantUsers/{userId}": {
+      "schema": "TenantUser",
+      "description": "Collection tracking safety officers or engineers registered under client licenses"
+    },
+    "/workers/{workerId}": {
+      "schema": "Worker",
+      "description": "Active global crew list for safety card scanning"
+    },
+    "/sessions/{sessionId}": {
+      "schema": "TbtSession",
+      "description": "Vault containing all signed toolbox safety report sessions"
+    },
+    "/topics/{topicId}": {
+      "schema": "TbtTopic",
+      "description": "Directory of compliance TBT programs and instructional safety cards"
+    },
+    "/users/{userId}": {
+      "schema": "StaffUser",
+      "description": "Dynamic staff lists under admin privileges"
+    },
+    "/clientProjects/{projectId}": {
+      "schema": "ClientProject",
+      "description": "Vault containing active safety projects, numbers, locations, and contract validity periods"
+    }
+  }
+}

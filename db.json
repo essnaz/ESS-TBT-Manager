@@ -1,0 +1,404 @@
+{
+  "sessions": [],
+  "workers": [
+    {
+      "name": "Gurbax Singh",
+      "clientName": "Emaar Properties PJSC",
+      "designation": "Steel Fixer",
+      "id": "W-32055",
+      "company": "Standard Civil Contracting",
+      "clientId": "emaar_id"
+    },
+    {
+      "name": "John Paul Santos",
+      "clientName": "Nakheel Properties",
+      "designation": "Rigger / Operator",
+      "id": "W-44120",
+      "clientId": "nakheel_id",
+      "company": "Precision Cranes Dubai"
+    },
+    {
+      "company": "Al Naboodah Subcon",
+      "clientId": "emaar_id",
+      "id": "W-88122",
+      "designation": "Scaffolder",
+      "clientName": "Emaar Properties PJSC",
+      "name": "Amir Khan"
+    },
+    {
+      "company": "UAE Drilling Ltd",
+      "clientId": "emaar_id",
+      "id": "W-99021",
+      "designation": "Holespotter / Watcher",
+      "clientName": "Emaar Properties PJSC",
+      "name": "Sajid Mahmood"
+    },
+    {
+      "id": "W-55011",
+      "name": "Rajesh Kumar",
+      "designation": "Steel Erector",
+      "company": "Link Construction Team",
+      "clientId": "link_id",
+      "clientName": "Link Middle East GCC"
+    },
+    {
+      "id": "W-55022",
+      "name": "Muhammad Ali",
+      "designation": "Welder / Fabricator",
+      "company": "LME Engineering Division",
+      "clientId": "link_id",
+      "clientName": "Link Middle East GCC"
+    },
+    {
+      "id": "W-55033",
+      "name": "Suresh Pillai",
+      "designation": "Scaffolder Supervisor",
+      "company": "Amana Contracting sub",
+      "clientId": "link_id",
+      "clientName": "Link Middle East GCC"
+    }
+  ],
+  "topics": [
+    {
+      "id": "top_1",
+      "title": "Heat Stress and Summer Hydration",
+      "category": "Climate Compliance"
+    },
+    {
+      "title": "Safe Working at Heights",
+      "category": "Fall Prevention",
+      "id": "top_2"
+    },
+    {
+      "id": "top_3",
+      "title": "Dropped Objects Risk & Exclusion Zones",
+      "category": "Dropped Objects"
+    },
+    {
+      "title": "Excavation and Shoring Safety Inspection",
+      "category": "Civil Works",
+      "id": "top_4"
+    },
+    {
+      "category": "General Safety",
+      "title": "Personal Protective Equipment (PPE) Compliance",
+      "id": "top_5"
+    },
+    {
+      "title": "Manual Handling and Heavy Lift Ergonomics",
+      "category": "Ergonomics",
+      "id": "top_6"
+    },
+    {
+      "title": "Crane Operations and Rigger Radio Coordination",
+      "category": "Lifting Safety",
+      "id": "top_7"
+    },
+    {
+      "title": "Electrical Power Tools & Wet-Zone Safety",
+      "category": "Electrical Safety",
+      "id": "top_8"
+    }
+  ],
+  "tenantUsers": [
+    {
+      "hasSavedProfile": true,
+      "role": "Site Engineer",
+      "loginId": "engineer@emaar-safety.com",
+      "safetyRating": 4,
+      "password": "engineerpassword",
+      "createdAt": "2026-06-15T08:11:25.011Z",
+      "name": "Tariq Mahmood",
+      "companyId": "EMP-ENG-45",
+      "position": "Senior Construction Engineer",
+      "id": "emaar_engineer_1",
+      "clientId": "emaar_id",
+      "passcode": "5678",
+      "certificates": [
+        {
+          "validityDate": "2028-11-20",
+          "certificateType": "Shoring & Excavation Safety",
+          "certificateNumber": "SE-88219-X"
+        }
+      ]
+    },
+    {
+      "passcode": "1234",
+      "certificates": [
+        {
+          "validityDate": "2029-05-12",
+          "certificateType": "NEBOSH IGC",
+          "certificateNumber": "NEBOSH-9821-A"
+        },
+        {
+          "validityDate": "2028-09-18",
+          "certificateType": "First Aid Level 3",
+          "certificateNumber": "FA-81203"
+        }
+      ],
+      "name": "Rahul Sharma",
+      "companyId": "EMP-OFF-08",
+      "position": "Senior HSE Inspector",
+      "id": "emaar_officer_1",
+      "clientId": "emaar_id",
+      "role": "HSE Officer",
+      "loginId": "hse@emaar-safety.com",
+      "safetyRating": 5,
+      "password": "officerpassword",
+      "createdAt": "2026-06-15T08:11:25.011Z",
+      "hasSavedProfile": true
+    },
+    {
+      "role": "HSE Officer",
+      "createdAt": "2026-06-15T08:11:25.011Z",
+      "safetyRating": 5,
+      "password": "officerpassword",
+      "loginId": "hse@nakheel-safety.com",
+      "hasSavedProfile": true,
+      "passcode": "4321",
+      "certificates": [
+        {
+          "certificateNumber": "IOSH-38122",
+          "certificateType": "IOSH Managing Safely",
+          "validityDate": "2029-01-15"
+        }
+      ],
+      "position": "Ecosystem Safety Auditor",
+      "name": "Michael Chen",
+      "companyId": "NKH-OFF-12",
+      "clientId": "nakheel_id",
+      "id": "nakheel_officer_1"
+    },
+    {
+      "id": "link_officer_1",
+      "clientId": "link_id",
+      "loginId": "hse@link-safety.com",
+      "password": "officerpassword",
+      "name": "Shafna Azeez",
+      "role": "HSE Officer",
+      "createdAt": "2026-06-15T08:24:44.548Z",
+      "passcode": "1234",
+      "companyId": "LME-OFF-18",
+      "position": "Senior Safety Officer (Link ME)",
+      "safetyRating": 5,
+      "hasSavedProfile": true,
+      "certificates": [
+        {
+          "certificateType": "NEBOSH International Diploma",
+          "certificateNumber": "NEBOSH-ND-10555",
+          "validityDate": "2030-01-01"
+        },
+        {
+          "certificateType": "First Aid Level 3 Cert",
+          "certificateNumber": "FA-91024",
+          "validityDate": "2028-11-15"
+        }
+      ]
+    },
+    {
+      "id": "link_officer_2",
+      "clientId": "link_id",
+      "loginId": "shafna@link-safety.com",
+      "password": "shafnaMOL@1980",
+      "name": "Shafna Mol",
+      "role": "HSE Officer",
+      "createdAt": "2026-06-15T08:24:44.548Z",
+      "passcode": "1980",
+      "companyId": "LME-OFF-22",
+      "position": "HSE Specialist",
+      "safetyRating": 5,
+      "hasSavedProfile": true,
+      "certificates": [
+        {
+          "certificateType": "NEBOSH IGC",
+          "certificateNumber": "NEBOSH-LME-9912",
+          "validityDate": "2029-06-30"
+        }
+      ]
+    },
+    {
+      "id": "link_engineer_1",
+      "clientId": "link_id",
+      "loginId": "engineer@link-safety.com",
+      "password": "engineerpassword",
+      "name": "Nazeer Ahmad",
+      "role": "Site Engineer",
+      "createdAt": "2026-06-15T08:24:44.548Z",
+      "passcode": "5678",
+      "companyId": "LME-ENG-88",
+      "position": "Site Construction Engineer",
+      "safetyRating": 5,
+      "hasSavedProfile": true,
+      "certificates": [
+        {
+          "certificateType": "Civil Works Safety Standards",
+          "certificateNumber": "CW-LME-4451",
+          "validityDate": "2029-04-12"
+        }
+      ]
+    },
+    {
+      "id": "link_engineer_2",
+      "clientId": "link_id",
+      "loginId": "engineer@linkmiddleeast.com",
+      "password": "shafnaMOL@1980",
+      "name": "Nazeer Ahmad",
+      "role": "Site Engineer",
+      "createdAt": "2026-06-15T08:24:44.548Z",
+      "passcode": "1980",
+      "companyId": "LME-ENG-91",
+      "position": "Lead Safety Engineer",
+      "safetyRating": 5,
+      "hasSavedProfile": true,
+      "certificates": [
+        {
+          "certificateType": "OSHA Construction Focus",
+          "certificateNumber": "OSHA-LME-2022",
+          "validityDate": "2029-08-20"
+        }
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "sitesActive": 1,
+      "allowedFeatures": {
+        "whatsappDispatch": true,
+        "heatStressSensor": true,
+        "ptwAttachment": false,
+        "sigCanvas": true
+      },
+      "sessionsCount": 3,
+      "adminName": "Damac Safety Admin",
+      "adminPassword": "damacpassword",
+      "subscriptionExpiryDate": "2027-06-30",
+      "createdAt": "2026-06-15T08:11:25.011Z",
+      "id": "damac_id",
+      "companyName": "DAMAC PJSC",
+      "subscriptionStatus": "Trial",
+      "adminCompanyId": "DMC-LAG-2026",
+      "adminLoginId": "admin@damac-safety.com",
+      "maxRolesAllowed": 5,
+      "adminPosition": "Safety Officer",
+      "passcode": "3333",
+      "usersActive": 2
+    },
+    {
+      "createdAt": "2026-06-15T08:11:25.011Z",
+      "adminPassword": "emaarpassword",
+      "subscriptionExpiryDate": "2028-12-31",
+      "sitesActive": 3,
+      "allowedFeatures": {
+        "heatStressSensor": true,
+        "whatsappDispatch": true,
+        "sigCanvas": true,
+        "ptwAttachment": true
+      },
+      "sessionsCount": 14,
+      "adminName": "Emaar Safety Director",
+      "adminPosition": "HSE Director",
+      "passcode": "1111",
+      "usersActive": 5,
+      "adminLoginId": "admin@emaar-safety.com",
+      "maxRolesAllowed": 10,
+      "companyName": "Emaar Properties PJSC",
+      "subscriptionStatus": "Paid",
+      "adminCompanyId": "EMP-DXB-2026",
+      "id": "emaar_id"
+    },
+    {
+      "id": "nakheel_id",
+      "adminCompanyId": "NKH-PLM-2026",
+      "companyName": "Nakheel Properties",
+      "subscriptionStatus": "Paid",
+      "maxRolesAllowed": 8,
+      "adminLoginId": "admin@nakheel-safety.com",
+      "usersActive": 3,
+      "adminPosition": "Corporate Safety Manager",
+      "passcode": "2222",
+      "sessionsCount": 8,
+      "adminName": "Nakheel HSE Lead",
+      "sitesActive": 2,
+      "allowedFeatures": {
+        "ptwAttachment": true,
+        "sigCanvas": true,
+        "heatStressSensor": true,
+        "whatsappDispatch": true
+      },
+      "adminPassword": "nakheelpassword",
+      "subscriptionExpiryDate": "2028-12-31",
+      "createdAt": "2026-06-15T08:11:25.011Z"
+    },
+    {
+      "id": "link_id",
+      "companyName": "Link Middle East GCC",
+      "adminLoginId": "admin@link-safety.com",
+      "adminPassword": "linkpassword",
+      "passcode": "1980",
+      "subscriptionStatus": "Paid",
+      "subscriptionExpiryDate": "2030-12-31",
+      "allowedFeatures": {
+        "whatsappDispatch": true,
+        "sigCanvas": true,
+        "ptwAttachment": true,
+        "heatStressSensor": true
+      },
+      "sitesActive": 4,
+      "usersActive": 6,
+      "sessionsCount": 22,
+      "createdAt": "2026-06-15T08:24:44.548Z",
+      "maxRolesAllowed": 15,
+      "adminName": "Link Safety Director",
+      "adminPosition": "Group HSE Director",
+      "adminCompanyId": "LME-HQ-2026"
+    }
+  ],
+  "users": [],
+  "clientProjects": [
+    {
+      "clientId": "emaar_id",
+      "validityDate": "2027-12-31",
+      "id": "proj_emaar_1",
+      "clientNameAddress": "Emaar Properties PJSC, Downtown Beachfront Residences, Downtown Marina Area D",
+      "projectName": "Downtown Beachfront Residences",
+      "projectNo": "EMP-DXB-2026",
+      "location": "Beachfront Sector 1"
+    },
+    {
+      "id": "proj_emaar_2",
+      "clientId": "emaar_id",
+      "validityDate": "2028-06-30",
+      "location": "Emaar South Block G",
+      "projectNo": "EMP-DXB-2026",
+      "clientNameAddress": "Emaar Properties PJSC, Emaar South District Phase 3, Emaar South Block G",
+      "projectName": "Emaar South District Phase 3"
+    },
+    {
+      "projectNo": "NKH-PLM-2026",
+      "location": "Crescent Sector West 3",
+      "clientNameAddress": "Nakheel Properties, Palm Jebel Ali infrastructure, Crescent Sector West 3",
+      "projectName": "Palm Jebel Ali infrastructure",
+      "id": "proj_nakheel_1",
+      "clientId": "nakheel_id",
+      "validityDate": "2029-12-31"
+    },
+    {
+      "id": "proj_link_1",
+      "clientId": "link_id",
+      "clientNameAddress": "Link Middle East GCC, Mussafah M-14, Area Lot 125, Abu Dhabi, UAE",
+      "projectName": "Mussafah Logistics Warehouse Extension",
+      "projectNo": "LME-ABU-2026",
+      "location": "Mussafah Sector M-14",
+      "validityDate": "2028-12-31"
+    },
+    {
+      "id": "proj_link_2",
+      "clientId": "link_id",
+      "clientNameAddress": "Link Middle East GCC, Jebel Ali Industrial Area 1, Dubai, UAE",
+      "projectName": "Jebel Ali Galvanizing Plant Upgrade",
+      "projectNo": "LME-DXB-2026",
+      "location": "Jebel Ali Ind Area 1",
+      "validityDate": "2029-06-30"
+    }
+  ]
+}
