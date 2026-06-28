@@ -30,7 +30,7 @@
 
 ---
 
-## ðŸ› ï¸ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Frontend:** React 18 with Vite, styled with Tailwind CSS, utilizing Lucide Icons and Recharts.
 - **Durable Persistence:** Google Cloud Firestore synchronization for encrypted multi-device backups.
